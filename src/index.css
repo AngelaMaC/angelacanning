@@ -1,13 +1,243 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(75deg, #001f54, #034078, #1282a2);
+
+}
+
+body {
+  font-family: 'Lekton', sans-serif;
+
+}
+
+.main-nav {
+  padding: 0 10rem;
+
+}
+
+.nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  list-style: none;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home,
+.about,
+.portfolio,
+.change-theme {
+  font-size: 2rem;
+}
+
+.dev-name {
+  font-size: 4rem;
+}
+
+/* Hover effect by https://codepen.io/t_afif/pen/KKNYoMo */
+.hover-effect {
+  background:
+    linear-gradient(#3FB8AF 0 0) left /var(--d, 0%) 100% no-repeat;
+  transition: 0.5s;
+}
+
+.hover-effect:hover {
+  --d: 100%;
+  color: #fff;
+}
+
+/* colorful hover effect by https://codepen.io/t_afif/pen/MWmZQxg */
+.color-hover a {
+  padding: 10px;
+  color: #0000;
+  font-weight: bold;
+  background: linear-gradient(rgb(255, 255, 255) 0 0) center/100% 100% no-repeat #3FB8AF;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: .4s linear;
+}
+
+.color-hover:hover a {
+  background-size: 0 100%;
+}
+
+.color-hover:before a {
+  content: "";
+  position: absolute;
+  inset: auto 50% 0;
+  height: 4px;
+  background-color: inherit;
+  transition: inherit;
+}
+
+.color-hover:hover:before a {
+  inset: auto 0 0;
+}
+
+/* Main */
+.wrapper {
+  display: flex;
+  width: auto;
+  margin: auto;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  /* align-items: center; */
+  height: 50vh;
+  width: 70vw;
+  /* background-color: #f9f2ea; */
+  padding: 50px;
+  /* border-radius: 10px 10px 10px 10px; */
+}
+
+.profile {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-profile {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border: #3FB8AF solid 10px;
+}
+
+.circle-profile img {
+  justify-content: center;
+}
+
+.profile-text {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: white;
+
+}
+
+.profile-text h1 {
+  font-size: 4rem;
+}
+
+.profile-text h2 {
+  font-size: 3rem;
+}
+
+.profile-text ul li:first-of-type {
+  margin-top: 20px;
+}
+
+.profile-text ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.socials {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-right: 10px;
+}
+
+.email a {
+  color: white;
+  text-decoration: none;
+}
+
+.created {
+  text-align: center;
+  color: #DDF2EB;
+  margin-top: 100px;
+}
+
+footer a {
+  color: #DDF2EB;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3FB8AF;
+}
+
+/* animation for hand emoji https://jarv.is/notes/css-waving-hand-emoji/ */
+.wave,
+.wave:hover {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: 2;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
 }
