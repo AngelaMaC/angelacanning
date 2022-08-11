@@ -18,6 +18,11 @@ body {
 
 }
 
+li {
+  list-style: none;
+  font-size: 18px;
+}
+
 .main-nav {
   padding: 0 10rem;
 
@@ -65,7 +70,7 @@ body {
 .hover-effect {
   background:
     linear-gradient(#3FB8AF 0 0) left /var(--d, 0%) 100% no-repeat;
-  transition: 0.5s;
+  transition: 0.15s;
 }
 
 .hover-effect:hover {
@@ -81,7 +86,7 @@ body {
   background: linear-gradient(rgb(255, 255, 255) 0 0) center/100% 100% no-repeat #3FB8AF;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: .4s linear;
+  transition: .15s linear;
 }
 
 .color-hover:hover a {
@@ -106,7 +111,6 @@ body {
   display: flex;
   width: auto;
   margin: auto;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -118,6 +122,7 @@ body {
   /* background-color: #f9f2ea; */
   padding: 50px;
   /* border-radius: 10px 10px 10px 10px; */
+  /* border: #DDF2EB 3px solid; */
 }
 
 .profile {
@@ -147,7 +152,6 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-
 }
 
 .profile-text h1 {
@@ -198,8 +202,7 @@ footer a:hover {
 }
 
 /* animation for hand emoji https://jarv.is/notes/css-waving-hand-emoji/ */
-.wave,
-.wave:hover {
+.wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: 2;
@@ -240,4 +243,106 @@ footer a:hover {
   100% {
     transform: rotate(0.0deg)
   }
+}
+
+/* About page */
+
+.about {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.pages-left-text {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 0px 10px;
+}
+
+.pages-left-text ul li {
+  font-size: 1.3rem;
+}
+
+.right {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+/* Portfolio Page */
+.my-projects-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 8px #001f54;
+  cursor: pointer;
+  transition: transform 50ms ease-in;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-body img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 1rem;
+  color: white;
+}
+
+.card-description {
+  padding: 0 1rem;
+  color: white;
+}
+
+.card-btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: none;
+  color: #001f54;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background: #3FB8AF;
+  color: white;
 }
