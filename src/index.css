@@ -66,6 +66,12 @@ li {
   font-size: 4rem;
 }
 
+.error {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Hover effect by https://codepen.io/t_afif/pen/KKNYoMo */
 .hover-effect {
   background:
@@ -152,6 +158,7 @@ li {
   width: 100%;
   height: 100%;
   color: white;
+  margin-left: 10px;
 }
 
 .profile-text h1 {

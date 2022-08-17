@@ -1,33 +1,25 @@
-import './index.css';
-import Main from './pages/Main';
 import Header from './Header';
-import Footer from './Footer';
+import Main from './pages/Main';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Change from './pages/Change';
+import Error from './pages/Error';
+import Footer from './Footer';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
-  let component
-  switch (window.location.pathname) {
-    case '/':
-      component = <Main />
-      break;
-    case '/about':
-      component = <About />
-      break;
-    case '/portfolio':
-      component = <Portfolio />
-      break;
-    case '/change':
-      component = <Change />
-      break;
-    default:
-      component = <Main />
-  }
   return (
     <div className="App">
-      <Header />
-      <> {component} </>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='about' element={<About />} />
+          <Route path='portfolio' element={<Portfolio />} />
+          <Route path='change' element={<Change />} />
+          <Route path='*' element={<Error />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

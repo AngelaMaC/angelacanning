@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Header'
 
 const Change = () => {
     return (
-        <div>Change</div>
+        <>
+            <h1 className='my-projects-title'>Change the Theme Here</h1>
+        </>
     )
 }
 
