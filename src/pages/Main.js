@@ -1,8 +1,6 @@
 import React from 'react'
 import logo from '../pages/profile_image.jpg';
 import { SocialIcon } from 'react-social-icons';
-import Header from '../Header';
-import Footer from '../Footer';
 
 
 const Main = () => {

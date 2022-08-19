@@ -4,13 +4,16 @@ const Cards = ({
     img,
     title,
     description,
-    button }) => {
+    view,
+    url,
+    newWindow
+}) => {
     return (
         <div className='card'>
             <img src={img} alt='modal' className='card-image'></img>
             <h2 className='card-title'>{title}</h2>
             <p className='card-description'>{description}</p>
-            <button className='card-btn'>{button}</button>
+            <a className='card-btn project-view-text' target={newWindow} href={url} >{view}</a>
         </div>
     )
 }
