@@ -10,8 +10,8 @@ const Cards = ({
 }) => {
     return (
         <div className='card'>
-            <img src={img} alt='modal' className='card-image'></img>
-            <h2 className='card-title'>{title}</h2>
+            <a target={newWindow} href={url}><img src={img} alt='modal' className='card-image'></img></a>
+            <a target={newWindow} href={url}><h2 className='card-title'>{title}</h2></a>
             <p className='card-description'>{description}</p>
             <a className='card-btn project-view-text' target={newWindow} href={url} >{view}</a>
         </div>

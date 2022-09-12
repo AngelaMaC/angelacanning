@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../pages/profile_image.jpg';
-import { SocialIcon } from 'react-social-icons';
+import logo from '../pages/profile_image.jpg'
+import { SocialIcon } from 'react-social-icons'
 
 
 const Main = () => {
@@ -30,4 +30,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default Main
