@@ -20,7 +20,7 @@ const Main = () => {
                         </ul>
                         <div className='socials'>
                             <span className='social-icons'><SocialIcon className='social-bkg' url='https://github.com/AngelaMaC' target='blank' rel='noopener noreferrer' bgColor="#FFFFFF" /></span>
-                            <span className='social-icons'><SocialIcon className='social-bkg' url='https://www.linkedin.com/in/angie-canning-607aa162/' target='blank' rel='noopener noreferrer' bgColor='#FFFFFF' /></span>
+                            <span className='social-icons'><SocialIcon className='social-bkg' url='https://www.linkedin.com/in/angelacanning/' target='blank' rel='noopener noreferrer' bgColor='#FFFFFF' /></span>
                         </div>
                     </div>
                 </div>
