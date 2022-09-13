@@ -1,4 +1,4 @@
-import Header from './Header'
+import Navbar from './Navbar'
 import Main from './pages/Main'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='about' element={<About />} />
