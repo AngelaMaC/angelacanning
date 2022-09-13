@@ -16,7 +16,7 @@ const Main = () => {
                         <h2>I'm a Web Developer.</h2>
                         <ul>
                             <li>&#127758; based in The Woodlands, TX</li>
-                            <li className='email'>&#128231; <a href='mailto:angelamcanning@outlook.com'>angelamcanning@outlook.com</a></li>
+                            <li className='email'>&#128231; <a href='mailto:angelamcanning@outlook.com'> angelamcanning@outlook.com</a></li>
                         </ul>
                         <div className='socials'>
                             <span className='social-icons'><SocialIcon className='social-bkg' url='https://github.com/AngelaMaC' target='blank' rel='noopener noreferrer' bgColor="#FFFFFF" /></span>
